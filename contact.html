@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Texas Info</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .floating-form {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      width: 300px;
+      z-index: 100;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .floating-form h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .floating-form input,
+    .floating-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .floating-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .floating-form button:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <img src="images/texas-icon.png" alt="Texas Icon" class="state-icon" />
+  <div class="hero">
+    <div class="top-bar">
+      <div class="socials">
+        <img src="images/facebook-icon.png" alt="Facebook" />
+        <img src="images/instagram-icon.png" alt="Instagram" />
+      </div>
+    </div>
+
+    <h1>WELCOME TO TEXAS<br><span>THE LONE STAR STATE</span></h1>
+
+    <div class="city-icons">
+      <a href="index.html"><img src="images/texas-city.png" alt="Texas" /></a>
+      <a href="austin.html"><img src="images/austin-city.png" alt="Austin" /></a>
+      <a href="dallas.html"><img src="images/dallas-city.png" alt="Dallas" /></a>
+      <a href="sanantonio.html"><img src="images/sanantonio-city.png" alt="San Antonio" /></a>
+    </div>
+
+    <footer>© 2025 Texas Information Site. Designed by Miguel Gonzalez.</footer>
+  </div>
+
+  <form class="floating-form" onsubmit="return validateEmails()">
+    <h2>Contact Us</h2>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" required>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="confirm-email">Confirm Email:</label>
+    <input type="email" id="confirm-email" name="confirm-email" required>
+
+    <label for="question">Your Question:</label>
+    <textarea id="question" name="question" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function validateEmails() {
+      const email = document.getElementById('email').value;
+      const confirm = document.getElementById('confirm-email').value;
+      if (email !== confirm) {
+        alert('Email addresses do not match.');
+        return false;
+      }
+      alert('Form submitted successfully!');
+      return false; // For demo purposes; set to true when ready for real submission
+    }
+  </script>
+
+<script>
+  document.querySelector(".floating-form").addEventListener("submit", function(e) {
+    const email = document.getElementById("email").value;
+    const confirmEmail = document.getElementById("confirm-email").value;
+
+    if (email !== confirmEmail) {
+      e.preventDefault(); // stop form from submitting
+      alert("Email addresses do not match. Please try again.");
+    }
+  });
+</script>
+
+</body>
+</html>
