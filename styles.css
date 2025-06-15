@@ -107,9 +107,10 @@ h1 {
 }
 
 .flag {
-  width: 250px;
+  width: 380px;
   border-radius: 30px;
   float: right;
+  height: 430px;
 }
 
 footer {
