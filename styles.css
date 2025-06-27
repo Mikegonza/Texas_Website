@@ -6,6 +6,8 @@ body {
   background-image: url('images/bluebonnet-bg.png');
   background-size: cover;
   background-position: center;
+  display: grid;
+  place-content: center;  
 }
 
 .hero {
@@ -26,13 +28,15 @@ body {
 .state-icon {
   position: absolute;
   top: 50px;
-  left: 50px;
+  left: -180px;
   width: 140px;
   background: white;
   padding: 8px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  z-index: 10;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .socials {
@@ -119,10 +123,7 @@ h1 {
 footer {
   margin-top: 40px;
   font-size: 14px;
-  color: #7083cd;
-  position: absolute;
-  top: 1350px;
-  left: 550px;
+  color: #7083cd;  
 }
 
 #main-title {
@@ -147,10 +148,7 @@ align-items: flex-start;
 .extras table {
   width: 50%;
   border-collapse: collapse;
-  margin: 20px 0;
-  position: absolute;
-  left: 0px;
-  top: 150px;
+  margin: 20px 0;  
 }
 
 .extras th, .extras td {
