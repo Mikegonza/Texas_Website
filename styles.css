@@ -80,6 +80,8 @@ h1 {
 }
 
 .description {
+  display: flex;
+  flex-wrap: wrap;
   text-align: left;
   max-width: 800px;
   width: 100%;
@@ -88,6 +90,8 @@ h1 {
   border-radius: 12px;
   z-index: 10;
   position: relative;
+  left: 400px;
+  margin-top: auto;
   
 }
 
