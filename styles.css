@@ -106,8 +106,7 @@ h1 {
 
 .city-flag {
   width: 400px;
-  height: auto;
-  max-height: 500px;
+  height: 366.19px;
   border-radius: 30px;
   object-fit: cover;
 }
@@ -176,4 +175,27 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #ccc;
+}
+
+@media (max-width: 768px) {
+  body.city-page .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body.city-page .city-flag {
+    width: 90%;
+    height: auto;
+    max-height: none;
+    margin-bottom: 20px;
+  }
+
+  body.city-page .description {
+    width: 90%;
+    padding: 20px;
+  }
+
+  body.city-page .city-icons img {
+    width: 120px;
+  }
 }
