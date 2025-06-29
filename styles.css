@@ -72,16 +72,15 @@ h1 {
 
 .content {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 450px;
-  margin-bottom: 10px;
+  justify-content: space-between;
+  align-content: flex-start;
+  gap: 30px; 
+  
 }
 
 .description {
-  display: flex;
-  flex-wrap: wrap;
+  
   text-align: left;
   max-width: 800px;
   width: 100%;
@@ -90,9 +89,7 @@ h1 {
   border-radius: 12px;
   z-index: 10;
   position: relative;
-  left: 400px;
-  margin-top: auto;
-  
+  margin-top: auto;  
 }
 
 .description li {
@@ -104,8 +101,7 @@ h1 {
   width: 380px;
   border-radius: 30px;
   height: 490px;
-  position: absolute;
-  right: 300;
+  margin-right: 30px; 
 }
 
 footer {
