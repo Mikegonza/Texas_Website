@@ -152,16 +152,6 @@ align-items: flex-start;
   background-color: rgba(255,255,255,0.2);
 }
 
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 4px;
-  margin-bottom: 12px;
-  border-radius: 8px;
-  border: none;
-  font-size: 16px;
-}
-
 button[type="submit"] {
   background-color: #ffffff;
   color: #000;
@@ -198,4 +188,49 @@ button[type="submit"]:hover {
   body.city-page .city-icons img {
     width: 120px;
   }
+}
+
+.floating-form {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  margin: 40px auto;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+
+}
+
+.floating-form h2 {
+  text-align: left;
+}
+
+.floating-form input,
+.floating-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.floating-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.floating-form button:hover {
+  background-color: #ccc;
 }

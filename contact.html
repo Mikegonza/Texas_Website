@@ -6,58 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us - Texas Info</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    .floating-form {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 20px;
-      border-radius: 12px;
-      width: 300px;
-      z-index: 100;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
 
-    .floating-form h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .floating-form input,
-    .floating-form textarea {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-      border: none;
-      border-radius: 8px;
-      font-size: 14px;
-    }
-
-    .floating-form button {
-      width: 100%;
-      padding: 10px;
-      background-color: #fff;
-      color: #000;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .floating-form button:hover {
-      background-color: #ccc;
-    }
-  </style>
 </head>
 <body>
-  <img src="images/texas-icon.png" alt="Texas Icon" class="state-icon" />
+  
   <div class="hero">
     <div class="top-bar">
       <div class="socials">
-        <img src="images/facebook-icon.png" alt="Facebook" />
-        <img src="images/instagram-icon.png" alt="Instagram" />
+      <a href="https://www.facebook.com/Texas.gov/" target="_blank">
+      <img src="images/facebook-icon.png" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/texasgov/" target="_blank">
+      <img src="images/instagram-icon.png" alt="Instagram" />
+      </a>
       </div>
     </div>
 
@@ -70,28 +31,30 @@
       <a href="sanantonio.html"><img src="images/sanantonio-city.png" alt="San Antonio" /></a>
     </div>
 
+    <form class="floating-form" onsubmit="return validateEmails()">
+      <h2>Contact Us</h2>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="confirm-email">Confirm Email:</label>
+      <input type="email" id="confirm-email" name="confirm-email" required>
+
+      <label for="question">Your Question:</label>
+      <textarea id="question" name="question" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
     <footer>© 2025 Texas Information Site. Designed by Miguel Gonzalez.</footer>
   </div>
 
-  <form class="floating-form" onsubmit="return validateEmails()">
-    <h2>Contact Us</h2>
-    <label for="fname">First Name:</label>
-    <input type="text" id="fname" name="fname" required>
-
-    <label for="lname">Last Name:</label>
-    <input type="text" id="lname" name="lname" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="confirm-email">Confirm Email:</label>
-    <input type="email" id="confirm-email" name="confirm-email" required>
-
-    <label for="question">Your Question:</label>
-    <textarea id="question" name="question" rows="4" required></textarea>
-
-    <button type="submit">Submit</button>
-  </form>
+  
 
   <script>
     function validateEmails() {
