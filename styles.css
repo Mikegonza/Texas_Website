@@ -208,6 +208,8 @@ button[type="submit"]:hover {
 
 .floating-form h2 {
   text-align: left;
+  position: relative;
+  width: 300px;
 }
 
 .floating-form input,
