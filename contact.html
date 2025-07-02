@@ -65,7 +65,7 @@
         return false;
       }
       alert('Form submitted successfully!');
-      return false; // For demo purposes; set to true when ready for real submission
+      return false; // set to true when ready for real submission
     }
   </script>
 
@@ -75,7 +75,7 @@
     const confirmEmail = document.getElementById("confirm-email").value;
 
     if (email !== confirmEmail) {
-      e.preventDefault(); // stop form from submitting
+      e.preventDefault(); 
       alert("Email addresses do not match. Please try again.");
     }
   });
