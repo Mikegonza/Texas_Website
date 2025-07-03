@@ -184,6 +184,7 @@ button[type="submit"]:hover {
     width: 90%;
     padding: 20px;
   }
+  
 
   body.city-page .city-icons img {
     width: 120px;
@@ -235,4 +236,7 @@ button[type="submit"]:hover {
 
 .floating-form button:hover {
   background-color: #ccc;
+}
+body.sources-page .description {
+  margin: 0 auto;
 }
