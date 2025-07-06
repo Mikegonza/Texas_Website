@@ -263,6 +263,10 @@ body.contact-page .form-layout {
 body.contact-page .email-img {
   width: 300px;
   height: auto;
-  border-radius: 12px;
+  border-radius: 200px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: relative;
+  left: 150px;
+  top: 100px;
+
 }
