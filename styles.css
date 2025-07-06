@@ -251,6 +251,18 @@ body.sources-page .banner-img {
   margin: 0 auto 30px;
 }
 
-body.contact-page .Email-img{
-  
+body.contact-page .form-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+body.contact-page .email-img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
