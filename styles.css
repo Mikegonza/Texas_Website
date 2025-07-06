@@ -245,5 +245,6 @@ body.sources-page .longhorn-img {
   width: 850px;
   height: 150px;
   object-fit: cover;
+  object-position: center top;
 }
 
