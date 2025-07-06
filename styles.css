@@ -245,6 +245,9 @@ body.sources-page .banner-img {
   width: 850px;
   height: 150px;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 40%;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto 30px;
 }
 
