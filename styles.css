@@ -255,7 +255,7 @@ body.contact-page .form-layout {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
+  gap: 0px;
   margin-top: 40px;
   flex-wrap: wrap;
 }
@@ -265,8 +265,9 @@ body.contact-page .email-img {
   height: auto;
   border-radius: 200px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  position: relative;
-  left: 150px;
-  top: 100px;
-
+  align-self: center;     
+  margin-top: 20px;       
+  margin-left: 0px;       
+  order: 1;               
+  flex-shrink: 0;
 }
