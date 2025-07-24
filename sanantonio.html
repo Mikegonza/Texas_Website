@@ -1,77 +1,100 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>San Antonio - Texas Cities</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body class="city-page">
-  
   <div class="hero">
-    <div class="top-bar">
-      <div class="socials">
-      <a href="https://www.facebook.com/Texas.gov/" target="_blank">
-      <img src="images/facebook-icon.png" alt="Facebook" />
-      </a>
-      <a href="https://www.instagram.com/texasgov/" target="_blank">
-      <img src="images/instagram-icon.png" alt="Instagram" />
-      </a>
+    <header>
+      <div class="top-bar">
+        <div class="socials">
+          <a href="https://www.facebook.com/Texas.gov/" target="_blank">
+            <img alt="Facebook" src="images/facebook-icon.png" />
+          </a>
+          <a href="https://www.instagram.com/texasgov/" target="_blank">
+            <img alt="Instagram" src="images/instagram-icon.png" />
+          </a>
+        </div>
       </div>
-    </div>
-    <h1>WELCOME TO TEXAS<br><span>THE LONE STAR STATE</span></h1>
-    <div class="city-icons">
-      <a href="index.html"><img src="images/texas-city.png" alt="Texas" /></a>
-      <a href="austin.html"><img src="images/austin-city.png" alt="Austin" /></a>
-      <a href="dallas.html"><img src="images/dallas-city.png" alt="Dallas" /></a>
-      <a href="sanantonio.html"><img src="images/sanantonio-city.png" alt="San Antonio" /></a>
-    </div>
-    <div class="content">
-      <img src="images/sanantonio_landmark.jpg" alt="San Antonio Image" class="flag city-flag" />
-      <div class="description">
-        <h2>San Antonio</h2>
-        
-        <p><strong>San Antonio</strong> is a city rich in history and culture in south-central Texas. It is home to The Alamo, a historic Spanish mission and site of a famous battle for Texas independence. The city features a beautiful River Walk, a network of walkways along the San Antonio River, and a diverse culinary scene. Tourism, military, healthcare, and oil industries drive the economy.</p>
-        <ul>
-            <li>Population: 1.5 million</li>
-            <li>Year Incorporated: 1837</li>
-            <li>Region: south-central Texas</li>
-            <li>Classification: Urban</li>
-            <li>Average Salary: $60,000/year</li>
-            <li>Cost of Living Index: 89</li>
-            <li>Average Income Compared to State: Lower than the state average</li>
-            <li>Average Weather: Warm climate year-round, annual average temperature 70°F</li>
-        </ul>
-        
+      <h1>WELCOME TO TEXAS<br />
+        <span>THE LONE STAR STATE</span>
+      </h1>
+    </header>
+    <nav>
+      <div class="city-icons">
+        <a href="index.html"><img alt="Texas" src="images/texas-city.png" /></a>
+        <a href="austin.html"><img alt="Austin" src="images/austin-city.png" /></a>
+        <a href="dallas.html"><img alt="Dallas" src="images/dallas-city.png" /></a>
+        <a href="sanantonio.html"><img alt="San Antonio" src="images/sanantonio-city.png" /></a>
       </div>
-    </div>
-    <footer>© 2025 Texas Information Site. Designed by Miguel Gonzalez.
-    <p><a href="sources.html">Sources & Citations</a></p>
+    </nav>
+    <main class="layout-main">
+      <main class="content">
+        <section class="content-row">
+          <!--Wrap content in a <section> tag-->
+          <img alt="San Antonio Image" class="flag city-flag" src="images/sanantonio_landmark.jpg" />
+          <div class="description">
+            <h2>San Antonio</h2>
+            <p><strong>San Antonio</strong> is a city rich in history and culture in south-central Texas. It is home to
+              The Alamo, a historic Spanish mission and site of a famous battle for Texas independence. The city
+              features a beautiful River Walk, a network of walkways along the San Antonio River, and a diverse culinary
+              scene. Tourism, military, healthcare, and oil industries drive the economy.</p>
+            <ul>
+              <li>Population: 1.5 million</li>
+              <li>Year Incorporated: 1837</li>
+              <li>Region: south-central Texas</li>
+              <li>Classification: Urban</li>
+              <li>Average Salary: $60,000/year</li>
+              <li>Cost of Living Index: 89</li>
+              <li>Average Income Compared to State: Lower than the state average</li>
+              <li>Average Weather: Warm climate year-round, annual average temperature 70°F</li>
+            </ul>
+          </div>
+        </section>
+        <aside class="aside-float">
+          <h3>Did You Know?</h3>
+          <ul>
+            <li>Home of the Spurs NBA team</li>
+            <li>The Alamo is a UNESCO World Heritage Site</li>
+            <li>Fiesta San Antonio is celebrated every April</li>
+          </ul>
+        </aside>
+      </main>
+    </main>
+    <div id="tip-box">Tip: Click on a city icon to learn more!</div>
+    <footer>
+      © 2025 Texas Information Site. Designed by Miguel Gonzalez.<p><a href="sources.html">Sources &amp;
+          Citations</a>
+      </p>
     </footer>
   </div>
+  <style>
+    .contact-float-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: white;
+      color: black;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
 
-<a href="contact.html" class="contact-float-button">Contact Us</a>
-<style>
-  .contact-float-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: white;
-    color: black;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    z-index: 999;
-  }
-
-  .contact-float-button:hover {
-    background-color: #ddd;
-  }
-</style>
-
+    .contact-float-button:hover {
+      background-color: #ddd;
+    }
+  </style>
+  <a class="contact-float-button" href="contact.html">Contact Us</a>
 </body>
+
 </html>

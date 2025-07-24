@@ -1,62 +1,71 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - Texas Info</title>
-  <link rel="stylesheet" href="styles.css" />
-
+  <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body class="contact-page">
-  
   <div class="hero">
-    <div class="top-bar">
-      <div class="socials">
-      <a href="https://www.facebook.com/Texas.gov/" target="_blank">
-      <img src="images/facebook-icon.png" alt="Facebook" />
-      </a>
-      <a href="https://www.instagram.com/texasgov/" target="_blank">
-      <img src="images/instagram-icon.png" alt="Instagram" />
-      </a>
+    <header>
+      <div class="top-bar">
+        <div class="socials">
+          <a href="https://www.facebook.com/Texas.gov/" target="_blank">
+            <img alt="Facebook" src="images/facebook-icon.png" />
+          </a>
+          <a href="https://www.instagram.com/texasgov/" target="_blank">
+            <img alt="Instagram" src="images/instagram-icon.png" />
+          </a>
+        </div>
       </div>
-    </div>
+      <h1>WELCOME TO TEXAS<br /><span>THE LONE STAR STATE</span></h1>
+    </header>
 
-    <h1>WELCOME TO TEXAS<br><span>THE LONE STAR STATE</span></h1>
+    <nav>
+      <div class="city-icons">
+        <a href="index.html"><img alt="Texas" src="images/texas-city.png" /></a>
+        <a href="austin.html"><img alt="Austin" src="images/austin-city.png" /></a>
+        <a href="dallas.html"><img alt="Dallas" src="images/dallas-city.png" /></a>
+        <a href="sanantonio.html"><img alt="San Antonio" src="images/sanantonio-city.png" /></a>
+      </div>
+    </nav>
 
-    <div class="city-icons">
-      <a href="index.html"><img src="images/texas-city.png" alt="Texas" /></a>
-      <a href="austin.html"><img src="images/austin-city.png" alt="Austin" /></a>
-      <a href="dallas.html"><img src="images/dallas-city.png" alt="Dallas" /></a>
-      <a href="sanantonio.html"><img src="images/sanantonio-city.png" alt="San Antonio" /></a>
-    </div>
-  <div class="form-layout">
-      <img src="images/email.jpg" alt="Email Illustration" class="email-img" />
-    
-    <form class="floating-form" onsubmit="return validateEmails()">
-      <h2>Contact Us</h2>
-      <label for="fname">First Name:</label>
-      <input type="text" id="fname" name="fname" required>
-
-      <label for="lname">Last Name:</label>
-      <input type="text" id="lname" name="lname" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="confirm-email">Confirm Email:</label>
-      <input type="email" id="confirm-email" name="confirm-email" required>
-
-      <label for="question">Your Question:</label>
-      <textarea id="question" name="question" rows="4" required></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
+    <main class="layout-main">
+      <main class="content">
+        <section class="content-row">
+          <img alt="Email Illustration" class="email-img" src="images/email.jpg" />
+          <div class="form-layout">
+            <form class="floating-form" onsubmit="return validateEmails()">
+              <h2>Contact Us</h2>
+              <label for="fname">First Name:</label>
+              <input id="fname" name="fname" required type="text" />
+              <label for="lname">Last Name:</label>
+              <input id="lname" name="lname" required type="text" />
+              <label for="email">Email:</label>
+              <input id="email" name="email" required type="email" />
+              <label for="confirm-email">Confirm Email:</label>
+              <input id="confirm-email" name="confirm-email" required type="email" />
+              <label for="question">Your Question:</label>
+              <textarea id="question" name="question" required rows="4"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </section>
+        <aside class="aside-float">
+          <p>Have a question about Texas or our website? Use the form to reach out to us. We will get back to you as
+            soon as possible!</p>
+        </aside>
+      </main>
+    </main>
+    <div id="tip-box">Tip: Click on a city icon to learn more!</div>
+    <footer>
+      © 2025 Texas Information Site. Designed by Miguel Gonzalez.
+      <p><a href="sources.html">Sources &amp; Citations</a></p>
+    </footer>
   </div>
-    <footer>© 2025 Texas Information Site. Designed by Miguel Gonzalez. <p><a href="sources.html">Sources & Citations</a></p></footer>
-  </div>
-
-  
 
   <script>
     function validateEmails() {
@@ -67,21 +76,9 @@
         return false;
       }
       alert('Form submitted successfully!');
-      return false; // set to true when ready for real submission
+      return false;
     }
   </script>
-
-<script>
-  document.querySelector(".floating-form").addEventListener("submit", function(e) {
-    const email = document.getElementById("email").value;
-    const confirmEmail = document.getElementById("confirm-email").value;
-
-    if (email !== confirmEmail) {
-      e.preventDefault(); 
-      alert("Email addresses do not match. Please try again.");
-    }
-  });
-</script>
-
 </body>
+
 </html>

@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,30 +6,32 @@ body {
   background-size: cover;
   background-position: center;
   display: grid;
-  place-content: normal; 
-  display: flex; 
+  place-content: normal;
+  display: flex;
 }
 
 .hero {
-  max-width: fit-content;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px 60px;
   text-align: center;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .top-bar {
   display: flex;
   position: relative;
   margin-bottom: 20px;
-  justify-content:flex-end;
+  justify-content: flex-end;
 }
 
 .socials {
   position: relative;
   display: flex;
   gap: 20px;
-  
+
 }
 
 .socials img {
@@ -38,6 +39,7 @@ body {
   height: 50px;
   border-radius: 8px;
   display: flex;
+
 }
 
 h1 {
@@ -73,23 +75,22 @@ h1 {
 .content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-content: flex-start;
-  gap: 30px; 
-  
+  gap: 30px;
+
 }
 
 .description {
-  
-  text-align: left;
+  flex: 1;
   max-width: 800px;
-  width: 100%;
-  padding: 28px;
-  background: rgba(158, 121, 121, 0.7);
-  border-radius: 12px;
-  z-index: 10;
-  position: relative;
-  margin-top: auto;  
+  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 
 .description li {
@@ -101,55 +102,64 @@ h1 {
   width: 380px;
   border-radius: 30px;
   height: 490px;
-  margin-right: 30px; 
+  margin-right: 30px;
+  height: auto;
+  max-height: 100%;
+  align-self: stretch;
 }
 
 .city-flag {
-  width: 450px;
-  height: 516.6px;
-  border-radius: 30px;
-  object-fit: cover;
+  width: 400px;
+  height: auto;
+  flex-shrink: 0;
+  height: auto;
+  max-height: 100%;
+  align-self: stretch;
 }
 
 footer {
   margin-top: 40px;
   font-size: 14px;
-  color: #7083cd;  
+  color: #7083cd;
 }
 
 #main-title {
   position: relative;
   top: 5px;
 }
-.extras{
-position: relative;
-left: 0px;
-top: 20px;
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-align-items: flex-start;
+
+.extras {
+  position: relative;
+  left: 0px;
+  top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
-.extras ol, .extras ul {
+
+.extras ol,
+.extras ul {
   text-align: left;
   margin-bottom: 20px;
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
 }
 
 .extras table {
   width: 50%;
   border-collapse: collapse;
-  margin: 20px 0;  
+  margin: 20px 0;
 }
 
-.extras th, .extras td {
+.extras th,
+.extras td {
   border: 2px solid rgb(39, 36, 36);
   padding: 10px;
   text-align: left;
 }
 
 .extras th {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 button[type="submit"] {
@@ -184,7 +194,7 @@ button[type="submit"]:hover {
     width: 90%;
     padding: 20px;
   }
-  
+
 
   body.city-page .city-icons img {
     width: 120px;
@@ -198,7 +208,7 @@ button[type="submit"]:hover {
   border-radius: 12px;
   width: 300px;
   margin: 40px auto;
-  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   text-align: left;
   display: flex;
   flex-wrap: wrap;
@@ -237,6 +247,7 @@ button[type="submit"]:hover {
 .floating-form button:hover {
   background-color: #ccc;
 }
+
 body.sources-page .description {
   margin: 0 auto;
 }
@@ -249,6 +260,9 @@ body.sources-page .banner-img {
   border-radius: 20px;
   display: block;
   margin: 0 auto 30px;
+  height: auto;
+  max-height: 100%;
+  align-self: stretch;
 }
 
 body.contact-page .form-layout {
@@ -262,15 +276,25 @@ body.contact-page .form-layout {
 
 body.contact-page .email-img {
   width: 300px;
-  height: auto;
+  height: 300px;
   border-radius: 200px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  align-self: center;     
-  margin-top: 20px;       
-  margin-left: 0px;       
-  order: 1;               
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   flex-shrink: 0;
+  margin-top: 200px;
+  margin-right: 100px;
+  margin-left: 100px;
+  order: 0;
+
 }
+
+body.contact-page .aside-float {
+  margin-left: 100px;
+}
+
+body.contact-page .content {
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   body.sources-page .banner-img {
     width: 90%;
@@ -286,4 +310,69 @@ body.contact-page .email-img {
   body.sources-page ul {
     padding-left: 20px;
   }
+}
+
+#tip-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(125, 125, 120, 0.85);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.page-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+
+ul.description {
+  text-align: left;
+}
+
+
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.banner-img {
+  width: 400px;
+  height: auto;
+  flex-shrink: 0;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+.description {
+  flex: 1;
+  align-self: stretch;
+}
+
+.aside-float {
+  float: right;
+  width: 250px;
+  padding: 12px;
+  margin: 150px 10px 10px 10px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  text-align: left;
+  align-self: flex-start;
+  height: auto;
+  border: 2px solid #007BFF;
 }
